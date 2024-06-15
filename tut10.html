@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Position</title>
+</head>
+<style>
+    .container{
+        background-color: khaki;
+        height: 1755px;
+        width: 100%;
+    }
+    div{
+        border: 2px solid red;
+        width: 55px;
+        height: 65px;
+        margin: 4px;
+        display: inline-block;
+    }
+    #box3{
+        position: relative;
+        left: 25px;
+        top: 35px;
+    }
+    #box5{
+        position: fixed;
+        right: 7px;
+        bottom: 5px;
+
+    }
+
+    
+</style>
+<body>
+    <div class="container">
+
+        <div id="box1">1</div>
+        <div id="box2">2</div>
+        <div id="box3">3</div>
+        <div id="box4">4</div>
+        <div id="box5">Chat with us</div>
+        
+    </div>
+
+</body>
+</html>

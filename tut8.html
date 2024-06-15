@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+</head>
+<style>
+    .navbar{
+        background-color: black;
+        border-radius: 30px;
+    }
+    .navbar ul{
+        overflow: auto;
+        
+    }
+    .navbar li{
+        list-style: none;
+        float: left;
+        margin: 10px 10px; /*yesley mero a ko text + navbar ko height badayo */
+        
+    }
+    .navbar li a{
+        padding: 2px 3px;
+        text-decoration: none;
+        color: white;
+        /* margin: 10px 10px; yesley mero a ko text haru bech ma gap badayo*/ 
+    }
+    .search{
+        float: right;
+        padding: 7px 35px;
+        
+    }
+    .search input{
+        border-radius: 35px;
+        /* width: 35px; */
+        padding: 3px;
+        text-align: center;
+    }
+
+</style>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <div class="search">
+                <input type="text" name="search" id="searrch" placeholder="search this web">
+            </div>
+        </ul>
+    </div>
+</body>
+</html>
