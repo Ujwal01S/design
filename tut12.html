@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+<style>
+    .container{
+        width: 100%;
+        height: 555px;
+        background-color: beige;
+        border: 3px solid red;
+        /* defination / starting of flex */
+        display: flex;
+
+        /* flex properties begins */
+        /* flex-direction: column; */
+        flex-direction: row; /* This is default */
+        flex-wrap: wrap;
+        justify-content: center;
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-around; */
+        align-items: center;
+        /* align-items: flex-end; conatiner ko buttom ma aucha */
+    }
+    .item{
+        background-color: azure;
+        border: 3px solid blueviolet;
+        margin: 10px;
+        padding: 3px;
+        width: 155px;
+        height: 155px;
+        /* display: inline; */
+    }
+    #item1{
+        /* order: 2; */
+        /* flex-grow: 1; */
+    }
+    #item3{
+        /* order: 3; */
+        align-self: flex-end;
+    }
+    #item2{
+        flex-shrink: 2;
+        flex-basis: 355px;
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <div class="item" id="item1">1st box</div>
+        <div class="item" id="item2">2nd box</div>
+        <div class="item" id="item3">3rd box</div>
+        <!-- <div class="item" id="item4">4rth box</div>
+        <div class="item" id="item5">5th box</div>
+        <div class="item" id="item6">6th box</div> -->
+    </div>
+    
+</body>
+</html>
