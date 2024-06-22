@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid: Spanning</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 2fr);
+        grid-row-gap: 1rem;
+        grid-column-gap: 4rem;
+    }
+    .box{
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(236, 186, 236);
+    }
+
+    .box:nth-child(1){
+        /* grid-column-start: 1;
+        grid-column-end: 3; */
+        grid-column: 1/ span 3;
+        grid-row: 1/ span3;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">This is box-1</div>
+        <div class="box">This is box-2</div>
+        <div class="box">This is box-3</div>
+        <div class="box">This is box-4</div>
+        <div class="box">This is box-5</div>
+        <div class="box">This is box-6</div>
+        <div class="box">This is box-7</div>
+        <div class="box">This is box-8</div>
+        <div class="box">This is box-9</div>
+        <div class="box">This is box-10</div>
+        <div class="box">This is box-11</div>
+        <div class="box">This is box-12</div>
+    </div>
+</body>
+</html>

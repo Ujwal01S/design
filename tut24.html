@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Rows</title>
+</head>
+<style>
+    .grid{
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-auto-rows: 2fr;
+        grid-gap: 2px;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    .item{
+        background-color: red;
+        border: 2px solid black;
+    }
+</style>
+<body>
+    <div class="grid">
+        <dib class="item">This is box1</dib>
+        <dib class="item">This is box2</dib>
+        <dib class="item">This is box3</dib>
+        <dib class="item">This is box4</dib>
+        <dib class="item">This is box5</dib>
+        <dib class="item">This is box6</dib>
+        <dib class="item">This is box7</dib>
+        <dib class="item">This is box8</dib>
+        <dib class="item">This is box9</dib>
+        <dib class="item">This is box10</dib>
+    </div>
+</body>
+</html>
